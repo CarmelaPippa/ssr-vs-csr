@@ -35,7 +35,7 @@ export default function Static() {
 
   useEffect(() => {
     if (!invalid && !data) setInvalid(true);
-  });
+  }, [invalid, data]);
 
   return (
     <main className={styles.main}>
